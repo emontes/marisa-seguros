@@ -1,15 +1,11 @@
 import React from "react";
 import Layout from "../components/Layout";
 import { StaticImage } from "gatsby-plugin-image";
-import { Link, graphql } from "gatsby";
-import RubrosList from "../components/RubrosList";
+import { Link } from "gatsby";
+import RubrosDestacados from "../components/RubrosDestacados";
 import Seo from "../components/SEO";
 
-const Nosotros = ({
-  data: {
-    allContentfulRubros: { nodes: rubros },
-  },
-}) => {
+const Nosotros = () => {
   return (
     <Layout>
       <Seo
@@ -41,32 +37,11 @@ const Nosotros = ({
         </section>
 
         <section className="featured-recipes">
-          <h5>Servicios Destacados</h5>
-          <RubrosList rubros={rubros} />
+          <RubrosDestacados />
         </section>
       </main>
     </Layout>
   );
 };
-
-export const query = graphql`
-  {
-    allContentfulRubros(
-      filter: {
-        contenido: { tipo: { eq: "servicios" } }
-        destacado: { eq: true }
-      }
-      sort: { fields: titulo, order: ASC }
-    ) {
-      nodes {
-        id
-        titulo
-        imagen {
-          gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
-        }
-      }
-    }
-  }
-`;
 
 export default Nosotros;

@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="page-footer">
       <p>
         &copy; {new Date().getFullYear() + " "}
-        <span>Marisa Seguros</span> Desarrolado por{" "}
+        <span>Marisa Seguros</span> Desarrollado por{" "}
         <a href="https://enriquemontes.com">Enrique Montes</a>
       </p>
     </footer>

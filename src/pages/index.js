@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import { StaticImage } from "gatsby-plugin-image";
-import AllRubros from "../components/AllRubros";
+import RubrosDestacados from "../components/RubrosDestacados";
 import Seo from "../components/SEO";
 const index = () => {
   return (
@@ -23,7 +23,7 @@ const index = () => {
             </div>
           </div>
         </header>
-        <AllRubros />
+        <RubrosDestacados />
       </main>
     </Layout>
   );

@@ -3,6 +3,8 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import RubrosList from "../components/RubrosList";
 import Seo from "../components/SEO";
+import TagsList from "../components/TagsList";
+import styled from "styled-components";
 
 const TagTemplate = ({ data, pageContext }) => {
   const rubros = data.allContentfulRubros.nodes;
@@ -14,13 +16,24 @@ const TagTemplate = ({ data, pageContext }) => {
       />
       <main className="page">
         <h2>{pageContext.tag}</h2>
-        <div className="tag-recipes">
+        <Wrapper>
+          <TagsList rubros={rubros} />
           <RubrosList rubros={rubros} />
-        </div>
+        </Wrapper>
       </main>
     </Layout>
   );
 };
+
+const Wrapper = styled.section`
+  display: grid;
+  gap: 2rem 1rem;
+
+  @media screen and (min-width: 992px) {
+    grid-template-columns: 200px 1fr;
+    gap: 1rem;
+  }
+`;
 
 export const query = graphql`
   query GetRubroByTag($tag: String) {
@@ -31,6 +44,9 @@ export const query = graphql`
       nodes {
         titulo
         id
+        contenido {
+          etiquetas
+        }
         imagen {
           gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG)
         }

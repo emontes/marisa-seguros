@@ -1,9 +1,25 @@
 import React from "react";
 import setupTags from "../utils/setupTags";
-import { Link } from "gatsby";
+import { Link, graphql, useStaticQuery } from "gatsby";
 import slugify from "slugify";
 
-const TagsList = ({ rubros }) => {
+const query = graphql`
+  {
+    allContentfulRubros(sort: { fields: titulo, order: ASC }) {
+      nodes {
+        id
+        titulo
+        contenido {
+          etiquetas
+        }
+      }
+    }
+  }
+`;
+
+const TagsList = () => {
+  const data = useStaticQuery(query);
+  const rubros = data.allContentfulRubros.nodes;
   const newTags = setupTags(rubros);
   return (
     <div className="tag-container">
