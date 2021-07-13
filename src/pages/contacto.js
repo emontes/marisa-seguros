@@ -15,25 +15,14 @@ const Contacto = () => {
           <article className="contact-info">
             <h3>¿Quieres contactarnos?</h3>
             <p>
-              You probably haven't heard of them gochujang flannel, readymade
-              chartreuse schlitz vaporware raclette kinfolk gentrify synth
-              tilde. land thundercats wayfarers chillwave narwhal sriracha
-              polaroid flannel chambray single-origin coffee locavore. Semiotics
-              locavore thundercats paleo PBR&B letterpress.
+              Nuestros asesores profesionales estarán encantados de brindarte el
+              apoyo profesional que mereces.
             </p>
             <p>
-              Sartorial chia artisan succulents, lo-fi butcher viral whatever
-              shabby chic fixie etsy four dollar toast hella.
+              Nuestra dirección de contacto es: .... ..... , Puebla, Puebla.
+              C.P. 79000.
             </p>
-            <p>
-              Pour-over authentic twee vegan green juice jean shorts microdosing
-              synth subway tile hexagon fixie woke affogato seitan tofu. Plaid
-              mustache you probably haven't heard of them, next level kinfolk
-              keytar kickstarter sartorial letterpress jean shorts. Small batch
-              farm-to-table iceland, mumblecore coloring book unicorn deep v
-              YOLO locavore bicycle rights taiyaki portland. Vape kale chips af
-              green juice. Flannel cred celiac aesthetic.
-            </p>
+            <p>Teléfono: 999 999 999 WhatsApp: 999 999 999</p>
           </article>
 
           <article>

@@ -433,29 +433,6 @@ form > *:last-child {
 }
 
 /*#########*/
-/* Footer */
-/*#########*/
-.page-footer {
-  text-align: center;
-  height: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--black);
-  color: var(--white);
-}
-.page-footer h5 {
-  margin-bottom: 0;
-}
-.page-footer p {
-  margin-bottom: 0;
-}
-.page-footer span,
-.page-footer a {
-  color: var(--primary-500);
-}
-
-/*#########*/
 /* Error */
 /*#########*/
 .error-page {

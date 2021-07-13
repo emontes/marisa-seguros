@@ -21,7 +21,7 @@ const Nosotros = () => {
               medida se su empresa.
             </p>
             <p>
-              Nuestro compromizo de seriedad es permanente y recide en el tiempo
+              Nuestro compromizo de seriedad es permanente y reside en el tiempo
               de experiencia asesorando clientes.
             </p>
             <Link to="/contacto" className="btn">
