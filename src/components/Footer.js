@@ -6,7 +6,7 @@ const Footer = () => {
     <Wrapper>
       <p>
         &copy; {new Date().getFullYear() + " "}
-        <span>Marisa Seguros</span> Desarrollado por{" "}
+        <span>Seguros mio</span> Desarrollado por{" "}
         <a href="https://enriquemontes.com">Enrique Montes</a>
       </p>
     </Wrapper>
