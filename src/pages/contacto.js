@@ -19,10 +19,12 @@ const Contacto = () => {
               apoyo profesional que mereces.
             </p>
             <p>
-              Nuestra dirección de contacto es: .... ..... , Puebla, Puebla.
-              C.P. 79000.
+              Calle Magdalena 10 B Col. La Paz <br />
+              Puebla, Pue Cp 72160
             </p>
-            <p>Teléfono: 999 999 999 WhatsApp: 999 999 999</p>
+            <p>
+              Teléfono: <b>221 349 4440</b>
+            </p>
           </article>
 
           <article>
