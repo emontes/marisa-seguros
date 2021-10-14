@@ -14,9 +14,18 @@ const RubroTemplate = ({ data }) => {
   } = data.contentfulRubros;
   const pathToImage = getImage(imagen);
   const { etiquetas } = contenido;
+  console.log(
+    "desde ruhbros--0--->",
+    imagen.gatsbyImageData.images.fallback.src
+  );
+
   return (
     <Layout>
-      <Seo title={titulo} description={descripcion} />
+      <Seo
+        title={titulo}
+        description={descripcion}
+        image={imagen.gatsbyImageData.images.fallback.src}
+      />
       <main className="page">
         <div className="recipe-page">
           {/* hero */}

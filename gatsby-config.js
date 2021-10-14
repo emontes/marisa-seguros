@@ -4,16 +4,23 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Seguros en Puebla",
+    siteUrl: "https://segurosmio.com",
+    title: `Seguros MIO`,
     description:
-      "Agente de seguros en Puebla, cotiza y contrata seguro de autos, gastos médicos y una amplica gama",
-    author: "@el_ade",
+      "Agente de seguros en Tulúm, cotiza y contrata seguro de autos, gastos médicos y una amplica gama de servicios para ayudarte en tus programas de prevención",
+    titleTemplate: `%s | Seguros MIO`,
+    twitterUsername: `@el_ade`,
+    image: `/mainimg.jpg`,
+
+    siteTitle: "Seguros en Puebla",
+    authorName: "SegurosMIO",
+    siteDescription: "Descripción del sitio de Seguros MIO",
   },
   plugins: [
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
-    // "gatsby-plugin-sitemap",
+    "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -59,6 +66,18 @@ module.exports = {
             },
           ],
         },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Seguros MIO`,
+        short_name: `SegurosMIO`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: "src/images/seguros-mio.jpg",
       },
     },
   ],

@@ -6,7 +6,7 @@ import Seo from "../components/SEO";
 const index = () => {
   return (
     <Layout>
-      <Seo title="Marisa Seguros" />
+      <Seo title="Agente de seguros en Tulúm" />
       <main className="page">
         <header className="hero">
           <StaticImage
@@ -18,7 +18,7 @@ const index = () => {
           ></StaticImage>
           <div className="hero-container">
             <div className="hero-text">
-              <h1>Agente de Seguros en Puebla</h1>
+              <h1>Agente de Seguros en Tulum</h1>
               <h4>Cerca cuando más lo necesitas</h4>
             </div>
           </div>
