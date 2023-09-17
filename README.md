@@ -14,14 +14,6 @@
 1. **Contacto Hubspot**
    https://app.hubspot.com/contacts/6942869/contact/3201/
 
-2. **Dominio GoDaddy**
-   https://segurosmio.com
-3. **Contentful**
-   sistemas.isa.obregon@gmail.com
-
-4. **Netlify**
-   sistemas.isa.obregon@gmail.com
-
 ## 🚀 Utilizamos el Minimal Starter
 
 1.  **Create a Gatsby site.**
