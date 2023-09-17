@@ -15,6 +15,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@stackbit/cms-contentful": "^0.4.12",
     "babel-plugin-styled-components": "^1.13.1",
     "gatsby": "^3.14.3",
     "gatsby-plugin-image": "^1.9.0",
